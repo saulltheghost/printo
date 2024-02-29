@@ -3,7 +3,7 @@ header {
 }
 header .container {
   position: relative;
-  width: 90%;
+  width: 93%;
 }
 header .container nav {
   height: auto;
@@ -14,6 +14,7 @@ header .container nav ul {
 header .container nav .phone {
   padding: 0;
   height: auto;
+  width:100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
