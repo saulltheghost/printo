@@ -34,8 +34,7 @@ header .container nav ul a img {
 header .container .description {
   position: absolute;
   grid-template-columns: repeat(1, 1fr);
-  top: 300px;
-  border:1px solid red;
+  top: 200%;
 }
 header .container .description .text {
   display: grid;
