@@ -1,0 +1,86 @@
+header {
+  height: 800px;
+}
+header .container {
+  position: relative;
+  width: 90%;
+}
+header .container nav {
+  height: auto;
+}
+header .container nav ul {
+  display: none;
+}
+header .container nav .phone {
+  padding: 0;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid red;
+}
+header .container nav ul .logo {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  border: 1px solid red;
+}
+header .container nav ul li a {
+  font-size: 16px;
+}
+header .container nav ul a img {
+  width: 200px;
+}
+header .container .description {
+  position: absolute;
+  grid-template-columns: repeat(1, 1fr);
+  top: 3%;
+}
+header .container .description .text {
+  display: grid;
+  place-items: center top;
+}
+header .container .description .text h1 {
+  font-size: 35px;
+  text-align: center;
+}
+header .container .description .img img {
+  width: 100%;
+}
+header .container .explore {
+  width: 230px;
+  height: 60px;
+  left: 50%;
+  bottom: 6%;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+}
+/* end head design */
+/* start quest design */
+.quest {
+  margin-top: 100px;
+  width: 100%;
+  height: 1200px;
+  position: relative;
+}
+
+.quest .squar img {
+  width: 400px;
+}
+.quest h1 {
+  text-align: center;
+}
+.quest h1 span {
+  color: var(--main-color);
+  text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.quest .container {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+/* end quest design */
