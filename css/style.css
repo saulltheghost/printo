@@ -23,6 +23,13 @@ li {
 html {
   scroll-behavior: smooth;
 }
+/* start variables */
+:root {
+  --main-color: #ffda00;
+  --secondary-color: #52d3d8;
+  --thrd-color: #e26ee5;
+}
+/* end variables */
 /* end global rules */
 /* start head design */
 header {
@@ -30,7 +37,7 @@ header {
   height: 756px;
   background-image: url(../images/Asset\ 5-8.png);
   background-size: cover;
-  background-position:center;
+  background-position: center;
   border: 1px solid transparent;
 }
 header .container {
@@ -40,6 +47,9 @@ header .container nav {
   width: 100%;
   height: 300px;
   margin: 30px auto;
+}
+header .container nav .phone{
+  display: none;
 }
 header .container nav ul {
   padding: 0;
@@ -54,39 +64,38 @@ header .container nav ul li a {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  transition: .3s;
-  -webkit-transition: .3s;
-  -moz-transition: .3s;
-  -ms-transition: .3s;
-  -o-transition: .3s;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
   position: relative;
   z-index: 1;
-
 }
 header .container nav ul li a:hover {
-  color:#e26ee5 ;
+  color: #e26ee5;
 }
-header .container nav ul  a img {
-  width:250px;
+header .container nav ul .logo a img {
+  width: 250px;
 }
-header .container .description{
+header .container .description {
   direction: rtl;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   gap: 20px;
-  place-self: center start ;
+  place-self: center start;
   width: 100%;
   height: 50%;
   bottom: 20%;
   position: absolute;
   left: 50%;
-  transform:translate(-50%,0) ;
-  -webkit-transform:translate(-50%,0) ;
-  -moz-transform:translate(-50%,0) ;
-  -ms-transform:translate(-50%,0) ;
-  -o-transform:translate(-50%,0) ;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 }
-header .container .description .text{
+header .container .description .text {
   display: grid;
   place-items: center top;
 }
@@ -103,9 +112,32 @@ header .container .description .img {
 header .container .description .img img {
   width: 80%;
 }
-/* end head design */
-/* header .container nav ul li a::before{
-  background: red;
+header .container .explore {
+  position: absolute;
+  right: 10%;
+  bottom: 25%;
+}
+header .container .explore a {
+  position: relative;
+  background-color: var(--secondary-color);
+  width: 230px;
+  height: 60px;
+  display: grid;
+  transition: 0.5s;
+  place-items: center;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+header .container .explore a::before {
+  background: var(--thrd-color);
   content: "";
   inset: 0;
   position: absolute;
@@ -114,8 +146,131 @@ header .container .description .img img {
   transition: transform 0.5s ease-in-out;
   z-index: -1;
 }
-header .container nav ul li a:hover::before {
+header .container .explore a:hover:before {
   transform: scaleX(1);
   transform-origin: left;
-
-} */
+}
+/* end head design */
+/* start quest design */
+.quest {
+  margin-top: 50px;
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.quest .squar {
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  transform: translateX(-50%);
+  z-index: -1;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.quest .squar img {
+  width: 400px;
+}
+.quest h1 {
+  text-align: center;
+}
+.quest h1 span{
+  color: var(--main-color);
+  text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.quest .container {
+  padding: 0;
+  display: grid;
+  width: 80%;
+  height: 100%;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+.quest .container .quests {
+  padding: 40px 20px 20px 20px;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.quest .container .quests:hover {
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+.quest .container .quests .icon {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.quest .container .quests .icon i {
+  font-size: 50px;
+  width: 100%;
+  color: white;
+}
+.quest .container .quests .icon p {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 5px;
+}
+.quest .container .quests p {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: white;
+}
+.quest .container .quest-1 {
+  background-image: linear-gradient(
+    135deg,
+    rgba(226, 110, 229, 1) 0%,
+    rgba(231, 128, 191, 1) 12%,
+    rgba(237, 151, 143, 1) 37%,
+    rgba(241, 168, 108, 1) 64%,
+    rgba(247, 189, 62, 1) 84%,
+    rgba(255, 218, 0, 1) 100%
+  );
+}
+.quest .container .quest-2 {
+  background: linear-gradient(
+    135deg,
+    rgba(82, 211, 216, 1) 0%,
+    rgba(137, 213, 147, 1) 27%,
+    rgba(171, 214, 105, 1) 58%,
+    rgba(205, 216, 63, 1) 88%,
+    rgba(255, 218, 0, 1) 100%
+  );
+}
+.quest .container .quest-3 {
+  background: linear-gradient(
+    135deg,
+    rgba(226, 110, 229, 1) 0%,
+    rgba(193, 133, 226, 1) 6%,
+    rgba(185, 139, 225, 1) 26%,
+    rgba(167, 151, 224, 1) 51%,
+    rgba(143, 168, 222, 1) 70%,
+    rgba(106, 194, 218, 1) 97%,
+    rgba(82, 211, 216, 1) 100%
+  );
+}
+/* end quest design */
