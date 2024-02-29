@@ -3,6 +3,7 @@ header {
 }
 header .container {
   position: relative;
+  height:auto;
   width: 90%;
 }
 header .container nav {
