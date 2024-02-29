@@ -34,6 +34,7 @@ header .container .description {
   position: absolute;
   grid-template-columns: repeat(1, 1fr);
   top: 9%;
+  border:1px solid red;
 }
 header .container .description .text {
   display: grid;
