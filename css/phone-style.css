@@ -1,6 +1,4 @@
-*{
-  border:1px solid red;
-}
+
 header {
   height: 800px;
 }
@@ -71,7 +69,7 @@ header .container .explore {
 }
 
 .quest .squar img {
-  width: 100%;
+  width: 300px;
 }
 .quest h1 {
   text-align: center;
