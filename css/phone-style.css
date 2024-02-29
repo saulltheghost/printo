@@ -3,7 +3,6 @@ header {
 }
 header .container {
   position: relative;
-  height:auto;
   width: 90%;
 }
 header .container nav {
@@ -34,7 +33,7 @@ header .container nav ul a img {
 header .container .description {
   position: absolute;
   grid-template-columns: repeat(1, 1fr);
-  top: 200%;
+  top: 20%;
 }
 header .container .description .text {
   display: grid;
