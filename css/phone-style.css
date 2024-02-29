@@ -33,7 +33,7 @@ header .container nav ul a img {
 header .container .description {
   position: absolute;
   grid-template-columns: repeat(1, 1fr);
-  top: 6%;
+  top: 9%;
 }
 header .container .description .text {
   display: grid;
