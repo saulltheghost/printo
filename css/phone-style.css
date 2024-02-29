@@ -18,13 +18,11 @@ header .container nav .phone {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  border: 1px solid red;
 }
 header .container nav ul .logo {
   width: 100%;
   display: grid;
   place-items: center;
-  border: 1px solid red;
 }
 header .container nav ul li a {
   font-size: 16px;
