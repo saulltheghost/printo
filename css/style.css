@@ -48,7 +48,7 @@ header .container nav {
   height: 300px;
   margin: 30px auto;
 }
-header .container nav .phone{
+header .container nav .phone {
   display: none;
 }
 header .container nav ul {
@@ -155,7 +155,7 @@ header .container .explore a:hover:before {
 .quest {
   margin-top: 50px;
   width: 100%;
-  height: 450px;
+  height: auto;
   position: relative;
 }
 .quest .squar {
@@ -174,8 +174,9 @@ header .container .explore a:hover:before {
 }
 .quest h1 {
   text-align: center;
+  text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.1);
 }
-.quest h1 span{
+.quest h1 span {
   color: var(--main-color);
   text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -190,7 +191,7 @@ header .container .explore a:hover:before {
 }
 .quest .container .quests {
   padding: 40px 20px 20px 20px;
-  height: 90%;
+  height: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
