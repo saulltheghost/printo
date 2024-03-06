@@ -65,7 +65,7 @@ header .container .explore {
 .quest {
   margin-top: 100px;
   width: 100%;
-  height: 1200px;
+  height: auto;
   position: relative;
 }
 
@@ -85,3 +85,13 @@ header .container .explore {
 }
 
 /* end quest design */
+.gallery .container {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+.gallery > h1::before {
+  right: 15%;
+}
