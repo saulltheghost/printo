@@ -95,3 +95,9 @@ header .container .explore {
 .gallery > h1::before {
   right: 15%;
 }
+.price .container{
+  grid-template-columns: repeat(1, 1fr);
+}
+.price .container .prix img {
+  width:300px;
+}
