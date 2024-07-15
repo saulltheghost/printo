@@ -1,103 +1,89 @@
-
-header {
-  height: 800px;
+.container {
+  width: 95%;
 }
-header .container {
-  position: relative;
-  width: 93%;
+/* start header design */
+header {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../images/background-header.jpg);
+  background-repeat: no-repeat;
+  background-size: 3250px;
+  background-position: -1100px 0;
 }
 header .container nav {
-  height: auto;
-  width:100%;
+  padding-top: 0px;
+  height: 130px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
-header .container nav ul {
-  display: none;
-}
-header .container nav .phone {
-  padding: 0;
-  height: auto;
-  width:100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-header .container nav ul .logo {
+header .container nav a {
+  font-weight: 400;
   width: 100%;
+  font-size: 20px;
   display: grid;
   place-items: center;
 }
-header .container nav ul li a {
-  font-size: 16px;
+
+header .container nav .logo {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
-header .container nav ul a img {
-  width: 200px;
-}
-header .container .description {
-  position: absolute;
-  grid-template-columns: repeat(1, 1fr);
-  top: 20%;
-}
-header .container .description .text {
-  display: grid;
-  place-items: center top;
-}
-header .container .description .text h1 {
-  font-size: 35px;
-  text-align: center;
-}
-header .container .description .img img {
-  width: 100%;
-}
-header .container .explore {
-  width: 230px;
-  height: 60px;
-  left: 50%;
-  bottom: 6%;
-  transform: translatex(-50%);
-  -webkit-transform: translatex(-50%);
-  -moz-transform: translatex(-50%);
-  -ms-transform: translatex(-50%);
-  -o-transform: translatex(-50%);
-}
-/* end head design */
-/* start quest design */
-.quest {
-  margin-top: 100px;
-  width: 100%;
+header .container nav .logo img {
+  width: 150px;
   height: auto;
-  position: relative;
 }
-
-.quest .squar img {
-  width: 300px;
-}
-.quest h1 {
+header .container .text {
+  width: 100%;
   text-align: center;
+  bottom: 6%;
+  transform: translate(-50%, 0);
+  right: auto;
+  left: 50%;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
 }
-.quest h1 span {
-  color: var(--main-color);
-  text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.1);
+header .container .text h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--frth-color);
 }
-.quest .container {
-  grid-template-columns: repeat(1, 1fr);
-  gap: 30px;
+header .container .text a {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* end header design */
+/* start question design */
+.question {
+  background-image: url(../images/phone-question-background-1.png);
+  background-size: 100%;
+  height: 750px;
 }
 
-/* end quest design */
-.gallery .container {
-  width: 90%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 40px;
+.question .container {
+  place-items: center;
 }
-.gallery > h1::before {
-  right: 15%;
+.question .container .text {
+  text-align: center;
+  bottom: 20%;
+  width: 100%;
+  height: 62%;
 }
-.price .container{
-  grid-template-columns: repeat(1, 1fr);
+.question .container .text h1 {
+  font-size: 40px;
+  margin: 40px 0 0 0;
 }
-.price .container .prix img {
-  width:300px;
+.question .container .text p {
+  line-height: 2;
+  font-size: 22px;
+  margin: 0;
 }
+
+/* end question design */
