@@ -68,11 +68,11 @@ header .container .text a {
 }
 
 .question .container {
-  place-items: center;
+  place-items: flex-start center;
 }
 .question .container .text {
   text-align: center;
-  bottom: 20%;
+  bottom: auto;
   width: 100%;
   height: 62%;
 }
