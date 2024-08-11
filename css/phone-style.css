@@ -149,6 +149,7 @@ header .container .text a {
 .gallery {
   height: 645px;
   background-image: url(../images/gallery-phone.jpg);
+background-repeat:no-repeat;
   background-size: 107% auto;
   margin-top: 100px;
 }
