@@ -63,7 +63,7 @@ header .container .text a {
 /* start question design */
 .question {
   background-image: url(../images/phone-question-background-1.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   height: 750px;
 }
 
@@ -78,12 +78,133 @@ header .container .text a {
 }
 .question .container .text h1 {
   font-size: 40px;
-  margin: 40px 0 0 0;
 }
 .question .container .text p {
   line-height: 2;
   font-size: 22px;
   margin: 0;
 }
-
 /* end question design */
+/* start produts design */
+.products{
+  display: grid;
+  align-items: center;
+}
+.products > h1 {
+  margin: 50px auto -50px;
+}
+.products > h1::before{
+  background-position-x: 50%;
+  left:0;
+  top: 0;
+  transform: translateX(0);
+  z-index: -1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.products .container {
+  height: 95%; 
+  display: grid;
+  gap: 60px;
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows:auto;
+}
+.products .container .pruduit {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+}
+.products .container .pruduit .image {
+  grid-row-start: 1;
+  align-items: center;
+  display: grid;
+  grid-row-end: 4;
+}
+.products .container .pruduit .link {
+  align-items: center;
+  display: grid;
+  align-items: center;
+  display: grid;
+}
+.products .container .pruduit .link a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+  margin: 0 auto;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+/* end produts design */
+/* start gallery design */
+.gallery {
+  height: 645px;
+  background-image: url(../images/gallery-phone.jpg);
+  background-size: 107% auto;
+  margin-top: 100px;
+}
+/* end gallery design */
+.contact {
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+}
+.contact > h1 {
+  width: 100%;
+  height: 100px;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.contact > h1::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../images/befor.png);
+  background-size: 270px;
+  background-position-x: 0px;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-10%);
+  z-index: -1;
+}
+.contact .container {
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.contact .container .infos {
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+}
+.contact .container .infos .text {
+  width: 100%;
+  height: 60%;
+  background-color: var(--frth-color);
+}
+.contact .container .image {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  place-items: center;
+  border: 1px solid yellow;
+}
+.contact .container .image img {
+  width: 60%;
+}
+/* end contact design */
