@@ -19,7 +19,7 @@ header .container nav {
 header .container nav a {
   font-weight: 400;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   display: grid;
   place-items: center;
 }
@@ -149,7 +149,7 @@ header .container .text a {
 .gallery {
   height: 645px;
   background-image: url(../images/gallery-phone.jpg);
-background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: 107% auto;
   margin-top: 100px;
 }
